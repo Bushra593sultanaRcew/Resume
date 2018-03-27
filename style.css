@@ -1,0 +1,128 @@
+.main{
+  width:100%;
+  background-color: #999;
+  /* flex-box syntax */
+  display: flex;
+  flex-direction: row;
+}
+.left{
+  width:25%;
+  background-color: #444;
+  border:5px solid #000;
+  /* border-image:url(); */
+  margin:5px;
+  padding:5px;
+}
+.right{
+  width:70%;
+  background-color: #666;
+  border:5px solid #000;
+  margin:4px;
+}
+#name{
+  color:green;
+}
+.left img{
+  border-radius: 50px;
+  border:5px solid #000;
+  margin:5px;
+}
+/* media queries(1024,1280,768,480)
+1280-1024:Desktop
+1024-768:Tablet(Landscape)
+768-480:Tablet
+480:mobile(or)smaller devices
+ */
+/* @media screen and(min-width:425px) */
+@media only screen and (min-width:1024px) and (max-width:1280px){
+.main{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+.left{
+  width:25%
+  background-color: #985;
+}
+.right{
+  width:75%inherit
+  background-color: #400;
+}
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .main{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+  }
+  .left{
+    width:25%;
+    background-color: red;
+  }
+  .right{
+    width:75%;
+    background-color: orange;
+  }
+}
+@media only screen and (min-width:480px)and (max-width:768px){
+  .main{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+  }
+  .left{
+    width:25%;
+    background-color: blue;
+  }
+  .right{
+    width:75%;
+    background-color: green;
+  }
+}
+@media only screen and (max-width:480px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+  .left{
+    width:25%;
+    background-color: pink;
+  }
+  .right{
+    width:75%;
+    background-color: skyblue;
+  }
+}
+{
+  .main{
+    width:100%;
+    background-color: #999;
+    /* flex-box syntax */
+    display: flex;
+    flex-direction: column;
+  }
+  .left
+  {
+    width:100%;
+    background-color: #333 ;
+    border:5px solid #000;
+    /* border-image:url(); */
+    margin:5px;
+    padding:5px;
+  }
+  .right{
+    width:100%;
+    background-color: #777;
+    border:5px solid #000;
+    margin:4px;
+  }
+  #name{
+    color:green;
+  }
+  .left img{
+    border-radius: 50px;
+    border:5px solid #000;
+    margin:5px;
+  }
+}
