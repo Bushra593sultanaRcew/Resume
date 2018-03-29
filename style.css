@@ -1,23 +1,27 @@
+table,tr,td{
+  border:2px solid #000;
+  border-collapse: collapse;
+}
+
 .main{
-  width:100%;
-  background-color: #999;
-  /* flex-box syntax */
-  display: flex;
-  flex-direction: row;
+    display: flex;
+  flex-wrap: wrap;
 }
 .left{
-  width:25%;
-  background-color: #444;
-  border:5px solid #000;
-  /* border-image:url(); */
-  margin:5px;
-  padding:5px;
+  text-align: justify;
+    border:2px solid #000;
+    margin:2px;
+    background-color: #BC8F8F;
+    color:#B0E0E6;
+  flex:2;
+padding:3px;
 }
 .right{
-  width:70%;
-  background-color: #666;
-  border:5px solid #000;
-  margin:4px;
+  text-align: justify;
+    border:2px solid #000;
+    background-color: #A9A9A9;
+  flex:1;
+  padding:2px;
 }
 #name{
   color:green;
@@ -34,48 +38,48 @@
 480:mobile(or)smaller devices
  */
 /* @media screen and(min-width:425px) */
-@media only screen and (min-width:1024px) and (max-width:1280px){
+ @media only screen and (min-width:1024px) and (max-width:1280px){
 .main{
   display: flex;
-  flex-direction: row;
-  width:100%;
+  flex-wrap: wrap;
+background-color: #FA8072;
 }
-.left{
-  width:25%
+  .left{
   background-color: #985;
+color:#FFB6C1;
 }
 .right{
-  width:75%inherit
   background-color: #400;
+
 }
+
 }
 @media only screen and (min-width:768px) and (max-width:1024px){
   .main{
     display: flex;
-    flex-direction: row;
-    width:100%;
+    flex-wrap: wrap;
   }
   .left{
-    width:25%;
+
     background-color: red;
   }
   .right{
-    width:75%;
+
     background-color: orange;
   }
 }
 @media only screen and (min-width:480px)and (max-width:768px){
   .main{
     display: flex;
-    flex-direction: row;
-    width:100%;
+    flex-wrap: wrap;
+
   }
   .left{
-    width:25%;
+
     background-color: blue;
   }
   .right{
-    width:75%;
+
     background-color: green;
   }
 }
@@ -83,36 +87,36 @@
   .main{
     display: flex;
     flex-direction: column;
-    width:100%;
+
   }
   .left{
-    width:25%;
+
     background-color: pink;
   }
   .right{
-    width:75%;
+
     background-color: skyblue;
   }
 }
 {
   .main{
-    width:100%;
+
     background-color: #999;
     /* flex-box syntax */
-    display: flex;
-    flex-direction: column;
-  }
-  .left
+     display: flex;
+    flex-wrap: wrap;
+   }
+   .left
   {
-    width:100%;
+
     background-color: #333 ;
     border:5px solid #000;
-    /* border-image:url(); */
-    margin:5px;
-    padding:5px;
+    border-image:url();
+     margin:5px;
+     padding:5px;
   }
-  .right{
-    width:100%;
+   .right{
+
     background-color: #777;
     border:5px solid #000;
     margin:4px;
@@ -121,8 +125,8 @@
     color:green;
   }
   .left img{
-    border-radius: 50px;
+     border-radius: 50px;
     border:5px solid #000;
     margin:5px;
   }
-}
+ }

@@ -1,0 +1,48 @@
+{
+  "basics":{
+    "photo":"p2.jpg",
+    "name":"S.bushra",
+    "email":"sara90@gmail.com",
+    "phone":"9738562365"
+  },
+"education":[
+  {
+"course":"Btech(Computer science and engineering)",
+"college":[
+  "Ravindra college of engineering for women",
+  "2015-19",
+  "60"
+]
+  },
+  {
+    "course":"Intermediate(MPC)",
+    "college":[
+      "Narayana junior college",
+      "2013-15",
+      "70"
+    ]
+  },
+  {
+  "course":"SSC",
+  "college":[
+    "Keshava reddy school",
+    "2013",
+    "90"
+  ]
+  }
+],
+"skills":[
+  {
+    "name":"operating system",
+    "value":"Windows,Linux"
+  },
+  {
+    "name":"programming language",
+    "value":"c,c++,java"
+  },
+  {
+    "name":"Web development",
+    "value":"HTML,PHP,PYTHON"
+  }
+]
+}
